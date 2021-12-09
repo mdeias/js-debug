@@ -44,39 +44,39 @@ printColorsNumber();
 // 3- No
 
 // ESERCIZIO 3
-// function addNumbers() {
-//     const userNumber = prompt('Inserisci un numero') *1;
-//     const total = userNumber + 12;
+function addNumbers() {
+    const userNumber = prompt('Inserisci un numero') *1;
+    const total = userNumber + 12;
 
-//     console.log(`Il risultato finale è ${total}`);
-// }
-// addNumbers();
+    console.log(`Il risultato finale è ${total}`);
+}
+addNumbers();
 
 // 1- Somma tra il numero 12 e il numero inserito dall'utente
 // 2- moltiplicare +1 il prompt, in caso contrario viene letto come stringa
 // 3- no
 
 // ESERCIZIO 4
-// function checkAccess() {
-//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+function checkAccess() {
+    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+    const userEmail = prompt('Inserisci il tuo indirizzo email');
     
 
-//     let grantAccess = false;
+    let grantAccess = false;
     
 
-//     if (addresses.includes(userEmail)) {
-//         grantAccess = true;
+    if (addresses.includes(userEmail)) {
+        grantAccess = true;
         
-//     }
+    }
 
-//     if (grantAccess === true) {
-//         console.log('Accesso consentito!');
-//     } else {
-//         console.log('Accesso negato!');
-//     }
-// }
-// checkAccess();
+    if (grantAccess === true) {
+        console.log('Accesso consentito!');
+    } else {
+        console.log('Accesso negato!');
+    }
+}
+checkAccess();
 
 // 1- Verifica che l'email dell'utente sia presente nell'array di stringhe
 // 2- 'false' non dev'essere una stringa
