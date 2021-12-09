@@ -56,7 +56,7 @@ const cars = [
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
     {
         manufacturer: 'Audi',
         model: 'R8',
@@ -64,14 +64,16 @@ const cars = [
     },
 ];
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+console.log(cars);
+
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 
 const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
+    return auto.type.toLowerCase() === 'diesel';
 });
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+     return !(auto.type.toLowerCase() === 'benzina') & !(auto.type.toLowerCase() === 'diesel');
 });
 
 console.log('Auto a benzina');
@@ -84,3 +86,7 @@ console.log(dieselCars);
 
 console.log('Tutte le altre auto');
 console.log(otherCars);
+
+// 1- Filtra le auto in base all'alimentazione
+// 2- manca una virgola che separa gli oggetti, alcune prime lettere sono maiuscole altre minuscole, arrow function invertita, return nella seconda costante, in otherCars '!' non è nel punto corretto, mancano le parentesi e '||' va sostituito con '&'
+// 3- Si, nella costante che deve ottenere le altre auto
